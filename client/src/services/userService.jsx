@@ -4,7 +4,7 @@ import socket from "../socket";
 import { logoutUser } from "./authService";
 import { openAddFriendPopup } from "../slices/userSlice";
 
-const app = axios.create({baseURL:'https://bubblechat-api.onrender.com/user', withCredentials: true})
+const app = axios.create({baseURL:'https://bubblechat-server.onrender.com/user', withCredentials: true})
 
 export const searchFriend = createAsyncThunk('user/searchFriend', async(data, {rejectWithValue}) => {
     try {

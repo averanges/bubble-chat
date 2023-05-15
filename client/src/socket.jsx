@@ -4,7 +4,7 @@ let socket;
 let socketid;
 
 if (!localStorage.getItem('socketId')) {
-  socket = io('https://bubblechat-api.onrender.com', {autoConnect: false});
+  socket = io('https://bubblechat-server.onrender.com', {autoConnect: false});
   socket.on('connect', () => {
     socketid = socket.id
     if (socketid) {
@@ -13,7 +13,7 @@ if (!localStorage.getItem('socketId')) {
   });
 } else {
   const socketId = localStorage.getItem('socketId');
-  socket = io('https://bubblechat-api.onrender.com', {
+  socket = io('https://bubblechat-server.onrender.com', {
     query: { socketId }
   });
 }

@@ -1,14 +1,17 @@
 import { Field, Form, Formik } from 'formik'
 import React from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import useHandleForm from '../hooks/useHandleForm'
 import { loginUser } from '../../../services/authService'
 import { loginValidationSchema } from '../consts/validationForForm'
+import { isLoadingOn } from '../../../slices/authSlice'
+import ClipLoader from "react-spinners/ClipLoader";
 
 
 const LoginForm = () => {
     const dispatch = useDispatch()
+    const isLoading = useSelector(isLoadingOn)
     const {onBlurOn, placeholders, handleBlur, handleFocus} = useHandleForm()
     return (
       <div>
@@ -46,7 +49,9 @@ const LoginForm = () => {
                             <label htmlFor="keep">Keep me as signed in</label>
                         </div>
                     </div>
-                    <button type="submit" className='mt-1 w-28 h-10 bg-rose-300 text-white rounded-lg shadow-lg hover:bg-white hover:text-black duration-500'>Login</button>
+                    <button type="submit" className='mt-1 w-28 h-10 bg-rose-300 text-white rounded-lg shadow-lg hover:bg-white hover:text-black duration-500'>
+                      {isLoading ? <ClipLoader size={30} color='white'/> : 'Login'}
+                    </button>
               </Form>
               )}
           </Formik>

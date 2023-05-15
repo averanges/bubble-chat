@@ -18,7 +18,7 @@ const app = express()
 
 app.use(cors({
   credentials: true,
-  origin: 'https://bubble-chat-h1bd.onrender.com',
+  origin: 'https://bubble-talks.vercel.app',
   allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin'],}))
 app.use(cookieParser())
 app.use(express.json())
@@ -39,7 +39,7 @@ app.use('/user', userRouter)
 const server = http.createServer(app)
 const io = new Server(server, {
   cors: {
-    origin: 'https://bubble-chat-h1bd.onrender.com',
+    origin: 'https://bubble-talks.vercel.app',
     credentials: true
   }
 })
