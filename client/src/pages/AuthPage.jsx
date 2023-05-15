@@ -20,7 +20,7 @@ const AuthPage = () => {
       <div className='flex rounded-2xl max-h-[50%]'>
         <div className='flex-1 h-full shadow-white shadow-md relative flex justify-center items-center'>
         <div className="bg-white bg-opacity-25 backdrop-filter backdrop-blur-md border border-white border-opacity-25 rounded-lg shadow-lg p-6 absolute w-4/6 h-4/6 flex flex-col justify-around">
-          <h1 className='text-3xl uppercase text-white tracking-widest font-semibold bg-gradient-to-r from-rose-300 to-white text-transparent bg-clip-text'>bubble chat</h1>
+          <h1 className='text-3xl uppercase tracking-widest font-semibold bg-gradient-to-r from-rose-300 to-white text-transparent bg-clip-text'>bubble chat</h1>
            {loginChoice ? 
             <div className='flex flex-col gap-2 text-white'>
               <p className='text-sm'>Don't have an account yet?</p>
