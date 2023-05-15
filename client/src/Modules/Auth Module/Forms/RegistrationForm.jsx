@@ -1,6 +1,6 @@
 import { Field, Form, Formik } from 'formik'
 import React from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { registerUser } from '../../../services/authService'
 import useHandleForm from '../hooks/useHandleForm'
 import { registerValidationSchema } from '../consts/validationForForm'
