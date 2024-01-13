@@ -1,6 +1,7 @@
 # Bubble Chat
 
-    A real-time chat application with features like instant messaging, friend management, and more. Developed with Tailwind CSS, React, Redux, Node.js, MongoDB, Mongoose, and Socket.IO, this chat project provides a dynamic and engaging platform for users to connect and communicate seamlessly.
+    A real-time chat application with features like instant messaging, friend management, and more. 
+    Developed with Tailwind CSS, React, Redux, Node.js, MongoDB, Mongoose, and Socket.IO, this chat project provides a dynamic and engaging platform for users to connect and communicate seamlessly.
 
 ## Demo
 
