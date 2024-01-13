@@ -10,7 +10,8 @@
 
 ## Screenshots
 
-    ![Login/Main Section](https://add.pics/images/2024/01/13/bubblechat.png)
+    ![Login/Main Section]
+    https://add.pics/images/2024/01/13/bubblechat.png
 
     ![Chat Section](https://add.pics/images/2024/01/13/chat.png)
 
